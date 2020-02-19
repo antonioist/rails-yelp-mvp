@@ -1,0 +1,35 @@
+<h1>Restaurant</h1>
+
+<div class="restaurants-cards">
+  <div class="card">
+    <h2>Name</h2>
+    <p><%= @restaurant.name %></p>
+  </div>
+  <div class="card">
+    <h2>Addres</h2>
+    <p><%= @restaurant.address %></p>
+  </div>
+  <div class="card">
+    <h2>Category</h2>
+    <p><%= @restaurant.category %></p>
+  </div>
+</div>
+<div class="review-card">
+  <% num = 1 %>
+  <% @restaurant.reviews.each do |review| %>
+  <div class="card-review">
+    <p id="review-p"><%= num %>) <%= review.content %></p>
+    <p id="rating">Review: <%= review.rating %></p>
+    <% num += 1 %>
+  </div>
+  <% end %>
+</div>
+
+<div class="icons">
+  <%= link_to restaurants_path  do%>
+    <i id="dragon" class="fab fa-d-and-d"></i>
+  <% end %>
+  <%= link_to  new_restaurant_review_path(@restaurant) do %>
+    <i id="frog" class="fas fa-frog"></i>
+  <% end %>
+</div>

@@ -1,0 +1,20 @@
+<div class="titleplus">
+<h1>Restaurants List</h1>
+  <div class="add">
+    <%= link_to  new_restaurant_path do %>
+    <i id="plus" class="far fa-plus-square"></i>
+    <% end %>
+  </div>
+</div>
+<div class="container">
+  <% @restaurants.each do |restaurant| %>
+  <div class="restaurants">
+    <h2><%= restaurant.name %></h2>
+    <%= link_to  restaurant_path(restaurant) do %>
+    <i id="eye" class="fas fa-eye"></i>
+    <% end %>
+  </div>
+  <% end %>
+</div>
+
+

@@ -1,0 +1,112 @@
+// Place all the styles related to the restaurants controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+h1 {
+  text-align: center;
+}
+
+#review-p {
+  text-align: left;
+}
+
+#rating {
+  text-align: center;
+
+}
+
+.add {
+  text-align: center;
+}
+
+.restaurants {
+  margin-top: 8px;
+  border: 1px solid rgb(173, 169, 169);
+  display: flex;
+  // align-items: center;
+  justify-content: space-between;
+  width: 600px;
+  text-align: center;
+  box-shadow: 4px 4px 4px -1px #999999;
+}
+
+.restaurants-cards {
+  display: flex;
+  // align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+#eye {
+  font-size: 50px;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center
+}
+
+#plus {
+  font-size: 36px;
+  margin-left: 16px;
+}
+.titleplus {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.card {
+  height: 180px;
+  width: 300px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: black;
+  font-size: 24px;
+  font-weight: bold;
+  text-shadow: 1px 1px 3px rgba(0,0,0,0.2);
+  border-radius: 5px;
+  box-shadow: 0 0 15px rgba(0,0,0,0.2);
+  margin-left: 16px;
+  margin-top: 16px;
+}
+
+.card-review {
+  flex-direction: column;
+  height: 150px;
+  width: 700px;
+  display: flex;
+  justify-content: space-between;
+  // align-items: center;
+  color: black;
+  font-size: 24px;
+  font-weight: bold;
+  text-shadow: 1px 1px 3px rgba(0,0,0,0.2);
+  border-radius: 5px;
+  box-shadow: 0 0 15px rgba(0,0,0,0.2);
+  margin-left: 16px;
+  margin-top: 16px;
+}
+
+.review-card {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.icons {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 225px;
+}
+
+#dragon {
+  font-size: 50px;
+}
+
+#frog {
+  font-size: 50px;
+}
